@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramiz Rahil Khan — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">RRK<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Ramiz Rahil <span class="accent">Khan</span></h1>
+      <div class="hero-typewriter">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-location">📍 Hyderabad, India</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/ramiz-rahil-khan-134218257" target="_blank" rel="noopener" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/DARKGHOST005" target="_blank" rel="noopener" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="mailto:ramizrahilkhan341@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">RRK</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Internships</span></div>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Certifications</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Aspiring Data Analyst with hands-on experience in <strong>Python</strong> and <strong>SQL</strong>, skilled in Pandas, Excel, Power BI, data cleaning, transformation, analysis, and visualization.</p>
+          <p>Experienced in developing dynamic data analysis workflows and working with diverse datasets to generate meaningful insights and support data-driven decision-making.</p>
+          <p>I also bring a strong background in <strong>cybersecurity</strong> — giving me a unique perspective on data integrity, security analytics, and systems thinking.</p>
+          <div class="about-tags">
+            <span>Data Analytics</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+            <span>Cybersecurity</span>
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">🐍</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>SQL</span><span>C</span><span>Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">📊</div>
+          <h3>Data & Analytics</h3>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Power BI</span><span>Excel</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">🤖</div>
+          <h3>AI / ML</h3>
+          <div class="skill-tags">
+            <span>LLM APIs</span><span>Prompt Engineering</span><span>OpenCV</span><span>DeepFace</span><span>DeepSeek R1</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">🌐</div>
+          <h3>Web & Backend</h3>
+          <div class="skill-tags">
+            <span>Flask</span><span>REST API</span><span>JSON Handling</span><span>Middleware</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">🔒</div>
+          <h3>Cybersecurity</h3>
+          <div class="skill-tags">
+            <span>Burp Suite</span><span>Nmap</span><span>Metasploit</span><span>Wireshark</span><span>OSINT</span><span>OWASP</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon">🗄️</div>
+          <h3>Systems & Networks</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>TCP/IP</span><span>Linux</span><span>Windows</span><span>macOS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Internship <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item" data-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analytics Intern</h3>
+                <p class="company">PySpiders</p>
+              </div>
+              <span class="badge badge-blue">Data Analytics</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Gained hands-on experience in Python, SQL, Pandas, NumPy, Excel, and Power BI</li>
+              <li>Performed data cleaning, analysis, transformation, and visualization on real-world datasets</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Python</span><span>Pandas</span><span>NumPy</span><span>Power BI</span><span>SQL</span><span>Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-delay="150">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Web App Penetration Testing Intern</h3>
+                <p class="company">Shradha Nextgen</p>
+              </div>
+              <span class="badge badge-red">Security</span>
+            </div>
+            <p class="timeline-date">📅 June 2025 – August 2025 (2 months)</p>
+            <ul class="timeline-bullets">
+              <li>Performed web application penetration testing using OWASP Top 10, Burp Suite, Nmap, and OWASP ZAP</li>
+              <li>Identified vulnerabilities and documented PoCs, impact, and remediation recommendations</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Burp Suite</span><span>Nmap</span><span>OWASP ZAP</span><span>OWASP Top 10</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Notable <span class="accent">Projects</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-delay="0">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="https://github.com/DARKGHOST005" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Dynamic Data Analysis & Visualization System</h3>
+          <p>Developed a Python-based data analysis and visualization system that accepts user-provided datasets, performs automated data cleaning, profiling, statistical analysis, correlation and trend detection, and generates interactive visualizations and dashboards.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Pandas</span><span>Data Analysis</span><span>Visualization</span><span>Dashboards</span>
+          </div>
+          <span class="featured-badge">⭐ Featured</span>
+        </div>
+
+        <div class="project-card" data-delay="150">
+          <div class="project-top">
+            <span class="project-icon">👤</span>
+            <div class="project-links">
+              <a href="https://github.com/DARKGHOST005" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Face Recognition Attendance System</h3>
+          <p>Created a Python-based facial recognition system to automate attendance. Integrated OpenCV and face_recognition libraries for real-time face detection and verification, improving accuracy and security in attendance processes.</p>
+          <div class="project-tags">
+            <span>Python</span><span>OpenCV</span><span>face_recognition</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-delay="300">
+          <div class="project-top">
+            <span class="project-icon">🔵</span>
+            <div class="project-links">
+              <a href="https://github.com/DARKGHOST005" target="_blank" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Bluepeak — Bluetooth Security Toolkit</h3>
+          <p>Developed a Python-based Linux security toolkit for Bluetooth device discovery, service enumeration, packet sniffing, and security assessment. Implemented modules for vulnerability detection, network/service scanning, and wireless security testing.</p>
+          <div class="project-tags">
+            <span>Python</span><span>Linux</span><span>Bluetooth</span><span>Security</span><span>Networking</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Education</span></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card" data-delay="0">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <p class="edu-inst">Biju Patnaik University of Technology (BPUT)</p>
+            <div class="edu-meta">
+              <span>📅 2022 – 2026</span>
+              <span class="edu-score">76.38%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-delay="150">
+          <div class="edu-icon">📚</div>
+          <div class="edu-body">
+            <h3>Higher Secondary Education</h3>
+            <p class="edu-inst">Sudhananda Vidyalaya</p>
+            <div class="edu-meta">
+              <span>📅 2020 – 2022</span>
+              <span class="edu-score">75.4%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-delay="300">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-body">
+            <h3>Matriculation</h3>
+            <p class="edu-inst">MBS Public School</p>
+            <div class="edu-meta">
+              <span>📅 2020</span>
+              <span class="edu-score">77.8%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Training & <span class="accent">Certifications</span></h2>
+      <div class="cert-grid">
+
+        <div class="cert-card" data-delay="0">
+          <div class="cert-logo">🛡️</div>
+          <div class="cert-body">
+            <h3>CCSFC — Certified Cyber Security Fundamentals Course</h3>
+            <p class="cert-issuer">CyberDojo — The School of CyberDefence</p>
+            <p class="cert-details">On-site Training · March 2025 · Gujarat</p>
+            <p>Completed blended training covering Red, Blue, and Purple Team operations. Gained practical experience in network exploitation, digital forensics, and incident response using real-world simulations.</p>
+          </div>
+        </div>
+
+        <div class="cert-card" data-delay="150">
+          <div class="cert-logo">🌐</div>
+          <div class="cert-body">
+            <h3>Cisco Junior Cybersecurity Analyst Certification</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p class="cert-details">On-site Training · Feb 2026 · Bhubaneswar</p>
+            <p>Learned cybersecurity fundamentals, network security, threat detection, risk management, and incident response.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Positions -->
+      <h2 class="section-title" style="margin-top: 3rem;">Positions of <span class="accent">Responsibility</span></h2>
+      <div class="pos-grid">
+        <div class="pos-card" data-delay="0">
+          <span class="pos-icon">🎯</span>
+          <div>
+            <h3>Student Coordinator</h3>
+            <p class="pos-place">Synergy Institute of Technology, BBSR</p>
+            <p>Organized and coordinated college technical events, managed teams, and facilitated communication between students and faculty.</p>
+          </div>
+        </div>
+        <div class="pos-card" data-delay="150">
+          <span class="pos-icon">📣</span>
+          <div>
+            <h3>Campus Ambassador</h3>
+            <p class="pos-place">CyberDojo: The School of CyberDefence</p>
+            <p>Promoted company initiatives on campus, increased student engagement, and represented the company during promotional campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="contact-sub">I'm open to Data Analyst roles, collaborations, and interesting projects.</p>
+      <div class="contact-cards">
+        <a href="mailto:ramizrahilkhan341@gmail.com" class="contact-card">
+          <span>📧</span>
+          <div>
+            <p class="cc-label">Email</p>
+            <p class="cc-value">ramizrahilkhan341@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+919090480133" class="contact-card">
+          <span>📱</span>
+          <div>
+            <p class="cc-label">Phone</p>
+            <p class="cc-value">+91-9090480133</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/ramiz-rahil-khan-134218257" target="_blank" class="contact-card">
+          <span>💼</span>
+          <div>
+            <p class="cc-label">LinkedIn</p>
+            <p class="cc-value">ramiz-rahil-khan-134218257</p>
+          </div>
+        </a>
+        <a href="https://github.com/DARKGHOST005" target="_blank" class="contact-card">
+          <span>🐙</span>
+          <div>
+            <p class="cc-label">GitHub</p>
+            <p class="cc-value">DARKGHOST005</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built with ❤️ · Ramiz Rahil Khan © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
